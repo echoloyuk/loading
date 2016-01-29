@@ -5,6 +5,7 @@
 ## 如何使用
 
 使用loading你需要下面两个步骤：
+
 1. 将loading的HTML代码放到您的HTML中。
 2. 加载loading的css样式。
 
