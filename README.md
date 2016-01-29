@@ -1,6 +1,9 @@
 # 关于loading
 
-使用CSS3模仿win10的loading效果。
+使用CSS3模仿win10的loading效果。不支持IE老版本浏览器。
+
+您可以在线查看示例：[Demo](http://htmlpreview.github.io/?https://github.com/echoloyuk/loading/blob/master/example.html)
+*注意，您必须使用Chrome，FireFox或IE10以上版本才能看到效果*
 
 ## 如何使用
 
