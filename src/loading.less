@@ -1,0 +1,80 @@
+.loading-panel (@w:100px, @l:10px, @dur:1.5s, @color:#c03){
+
+    .rotate (@delay:0){
+        -webkit-animation:rotate @dur cubic-bezier(0.1,0.6,0.9,0.4) @delay infinite;
+        -moz-animation:rotate @dur cubic-bezier(0.1,0.6,0.9,0.4) @delay infinite;
+        -o-animation:rotate @dur cubic-bezier(0.1,0.6,0.9,0.4) @delay infinite;
+        -ms-animation:rotate @dur cubic-bezier(0.1,0.6,0.9,0.4) @delay infinite;
+        animation:rotate @dur cubic-bezier(0.1,0.6,0.9,0.4) @delay infinite;
+    }
+    @keyframes rotate{
+        0%{
+            transform:rotate(0deg);
+        }
+        100%{
+            transform:rotate(360deg);
+        }
+    }
+
+    .loading-panel{
+        width:@w;
+        height:@w;
+        position:absolute;
+
+        .point{
+            position:absolute;
+            left:50%;
+            top:50%;
+            margin-left:-@l/2;
+            width:@l;
+            height:50%;
+            transform-origin:@l/2 0;
+            transform:rotate(0deg);
+            background-color:none;
+
+            .inner{
+                position:absolute;
+                width:@l;
+                height:@l;
+                background-color:@color;
+                top:70%;
+                left:0;
+                border-radius:@l/2;
+            }
+
+            &:nth-child(10n+1){
+                .rotate(0s);
+            }
+            &:nth-child(10n+2){
+                .rotate(@dur/14*1);
+            }
+            &:nth-child(10n+3){
+                .rotate(@dur/14*2);
+            }
+            &:nth-child(10n+4){
+                .rotate(@dur/14*3);
+            }
+            &:nth-child(10n+5){
+                .rotate(@dur/14*4);
+            }
+            &:nth-child(10n+6){
+                .rotate(@dur/14*5);
+            }
+            &:nth-child(10n+7){
+                .rotate(@dur/14*6);
+            }
+            &:nth-child(10n+8){
+                .rotate(@dur/14*7);
+            }
+            &:nth-child(10n+9){
+                .rotate(@dur/14*8);
+            }
+            &:nth-child(10n){
+                .rotate(@dur/14*9);
+            }
+        }
+    }
+}
+
+.loading-panel(60px, 4px, 1.4s);
+
