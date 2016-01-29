@@ -8,6 +8,25 @@
 1. 将loading的HTML代码放到您的HTML中。
 2. 加载loading的css样式。
 
+loading的HTML代码：
+````
+<div id="loading" class="loading-panel">
+    <div class="point"><div class="inner"></div></div>
+    <div class="point"><div class="inner"></div></div>
+    <div class="point"><div class="inner"></div></div>
+    <div class="point"><div class="inner"></div></div>
+    <div class="point"><div class="inner"></div></div>
+    <div class="point"><div class="inner"></div></div>
+    <div class="point"><div class="inner"></div></div>
+    <div class="point"><div class="inner"></div></div>
+</div>
+````
+
+加载loading
+````
+<link rel="stylesheet" type="text/css" href="./src/loading.css">
+````
+
 ## 如何修改loading的样式
 
 loading可以让你定制：
