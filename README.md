@@ -1,6 +1,6 @@
 # 关于loading
 
-使用CSS3模仿win10的loading效果，虽然还没有100%还原，但是已经基本实现效果。
+使用CSS3模仿win10的loading效果。
 
 ## 如何使用
 
